@@ -42,7 +42,7 @@
 
         Телефон:<br>
 
-        <div id="message">wdfawd</div>
+        <!-- <div id="message">wdfawd</div> -->
 
 
         <input type="text" name="number" class="mb-2 phone-mask modal-input " required maxlength="11"><br>
@@ -74,12 +74,17 @@
       </form>
 
 
+      <!-- картинка успешой отправки -->
+      <div id="checkmarkAnim-block" style="display:none; justify-content:center; align-content:center; width:auto; height:auto; margin-top: 20px;">
+        <img src="src/success_.gif" id="checkmarkAnim">
+        <div style="display:flex; align-items:center;">
+          <p style="margin:0px !important; font-size:16px;">Заявка отправлена, ожидайте</p>
+        </div>
+      </div>
+
+
     </div>
 
-    <!-- картинка успешой отправки -->
-    <div style="display:flex; justify-content:center; align-content:center; width:auto; height:auto;">
-      <img id="checkmarkAnim" src="src/success_.gif" style="display:none">
-    </div>
 
 
   </div>
