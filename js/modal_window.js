@@ -17,13 +17,21 @@ $("#modalform").on("submit", function (event) {
       $("#counter").text("0");
 
       // анимация успешной отправки
-      $(".modal-content").hide();
+      // $(".modal-content").hide();
+
+      $("#checkmarkAnim-block").css({ display: "flex" });
       $("#checkmarkAnim").show();
 
       setTimeout(function () {
+        // $("#checkmarkAnim").hide();
+        // $("myModal").hide();
         $("#checkmarkAnim").hide();
-        $("myModal").hide();
-      }, 700);
+      }, 3000);
+      setTimeout(function () {
+        // $("#checkmarkAnim").hide();
+        // $("myModal").hide();
+        $("#checkmarkAnim-block").hide();
+      }, 3000);
       // анимация успешной отправки
     },
     error: function (xhr, _status, error) {
