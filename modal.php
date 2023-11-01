@@ -15,10 +15,6 @@ if ($connect_sql->connect_error) {
 
 if (($_SERVER["REQUEST_METHOD"] == "POST") && ($connect_sql)) {
 
-
-
-
-
   $username_form = $_POST["name"];
   $number_form = $_POST["number"];
   $msg_form = $_POST["msg"];
@@ -37,5 +33,5 @@ if (($_SERVER["REQUEST_METHOD"] == "POST") && ($connect_sql)) {
 
   $stmt->execute();
 
-  echo var_dump($stmt);
+  // echo var_dump($stmt);
 }
