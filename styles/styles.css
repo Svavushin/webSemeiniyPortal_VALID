@@ -1392,35 +1392,45 @@ div.row.navbar-right.nav-svm-right a {
 /* кастомизация сабмита модалки */
 
 .submit-btn-block input {
-  width: calc(100% - 10px);
+  height: 100% !important;
+  width: 100% !important;
   color: #123a63;
   font-weight: 500;
   background: transparent;
   outline: none;
   border: none;
-  margin-top: 5px;
   padding-bottom: 5px;
+  transition: color 0.1s ease;
 }
 
 .submit-btn-block {
   width: 200px;
-  padding: 5px 15px;
+  height: 50px;
   display: flex;
+  
   flex-flow: column;
   justify-content: center;
   align-items: center;
   border-color: #5e727c;
-  border-radius: 5px 5px 5px 5px;
+  border-radius: 2px;
   border: 1px solid;
   transition: all 0.2s ease;
 }
 
 .submit-btn-block:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   cursor: pointer;
   color: #fff;
   background-color: #b7c136;
+  border-radius: 10px;
 }
+
+.submit-btn-block input:hover {
+  
+  color: #fff;
+}
+
+
 
 /* кастомизация сабмита модалки */
 
