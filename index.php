@@ -38,7 +38,21 @@
 
         Имя:<br>
 
-        <input type="text" name="name" class="mb-2 modal-input" required maxlength="15"><br>
+        <input id="name_str" type="text" name="name" class="mb-2 modal-input" required><br>
+
+        <script>
+          $(document).ready(function() {
+            $("#name_str").mask('ZZZZZZZZZZZZZZZZ',{
+                translation: {
+                    'Z':   {
+                       pattern: /[а-яА-ЯA-Za-z]/, optional: false
+                }
+              }
+            });
+
+          });
+        </script>
+
 
         Телефон:<br>
 
