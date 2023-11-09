@@ -23,13 +23,11 @@ $("#modalform").on("submit", function (event) {
       $("#checkmarkAnim").show();
 
       setTimeout(function () {
-        // $("#checkmarkAnim").hide();
-        // $("myModal").hide();
+      
         $("#checkmarkAnim").hide();
       }, 3000);
       setTimeout(function () {
-        // $("#checkmarkAnim").hide();
-        // $("myModal").hide();
+      
         $("#checkmarkAnim-block").hide();
       }, 3000);
       // анимация успешной отправки
